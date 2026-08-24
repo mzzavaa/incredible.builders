@@ -1,0 +1,56 @@
+# Schema for build challenges and hackathons rendered at /challenges/.
+# status: open, judging, closed, or upcoming.
+
+- slug: winter-agent-sprint
+  title: "Winter Agent Sprint"
+  status: closed
+  format: four-week-build
+  brief: "Ship an agent that does one narrow job better than a human doing it manually, and prove it with numbers."
+  opens: "2026-02-02"
+  closes: "2026-03-02"
+  team_size_max: 3
+  recognition: "Featured build slot, maintainer review session, and conference talk support"
+  judges: [linda-mhmd]
+  rubric:
+    working_software: 40
+    clarity: 25
+    originality: 20
+    reusability: 15
+  entries_url: "https://github.com/example/agent-scaffold/discussions"
+  winners: []
+
+- slug: autumn-community-jam
+  title: "Autumn Community Jam"
+  status: closed
+  format: weekend-sprint
+  brief: "Automate one painful part of running a technical community, end to end, in 48 hours."
+  opens: "2025-10-17"
+  closes: "2025-10-19"
+  team_size_max: 4
+  recognition: "Showcase feature and a co-maintained repo under the org"
+  judges: [linda-mhmd]
+  rubric:
+    working_software: 40
+    clarity: 25
+    originality: 20
+    reusability: 15
+  entries_url: "https://github.com/example/usergroup-toolkit/discussions"
+  winners: [cfp-triage-bot]
+
+- slug: retrieval-kata
+  title: "Retrieval Kata"
+  status: upcoming
+  format: always-on-kata
+  brief: "Beat the published recall baseline on a shared messy corpus without increasing cost per query."
+  opens: "2026-10-01"
+  closes: ""
+  team_size_max: 2
+  recognition: "Leaderboard placement and a teardown write-up of the winning approach"
+  judges: [linda-mhmd]
+  rubric:
+    working_software: 50
+    clarity: 20
+    originality: 15
+    reusability: 15
+  entries_url: "https://github.com/example/agent-scaffold/discussions"
+  winners: []

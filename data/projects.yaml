@@ -1,0 +1,65 @@
+# Schema for the open source project index rendered at /projects/.
+# One entry per repo. Keep status honest: active, stable, or archived.
+
+- slug: agent-scaffold
+  title: "Agent Scaffold"
+  subtitle: "Opinionated starter for multi-agent systems"
+  category: ai-systems
+  status: active
+  language: Python
+  license: Apache-2.0
+  description: "Multi-agent starter with routing, tracing, evaluation, and budget caps wired in before the first custom tool is written."
+  tech: [Python, AWS Bedrock, CrewAI, OpenTelemetry, Terraform]
+  repo: "https://github.com/example/agent-scaffold"
+  docs: "/projects/agent-scaffold/"
+  maintainers: [linda-mhmd]
+  looking_for_maintainers: false
+  highlights:
+    - Static router with a documented escape hatch for planner-based routing
+    - Budget guard that halts a run before it crosses a configured spend ceiling
+    - Evaluation harness with a starter set of cases per sample crew
+    - OpenTelemetry traces on every tool call, exportable to any collector
+  related_labs: [first-agent-in-an-hour, serverless-rag-pipeline]
+  related_teardowns: [multi-agent-orchestration]
+
+- slug: mcp-server-kit
+  title: "MCP Server Kit"
+  subtitle: "Templates and conformance harness for MCP servers"
+  category: developer-tooling
+  status: active
+  language: TypeScript
+  license: MIT
+  description: "Three starter templates plus a conformance test harness for building Model Context Protocol servers that behave under real clients."
+  tech: [TypeScript, Node, MCP, Vitest, Docker]
+  repo: "https://github.com/example/mcp-server-kit"
+  docs: "/projects/mcp-server-kit/"
+  maintainers: [linda-mhmd]
+  looking_for_maintainers: true
+  highlights:
+    - Read-only, write-capable, and proxy templates with matching test suites
+    - Conformance harness that rejects malformed tool schemas before publish
+    - Auth patterns documented for token passthrough and scoped credentials
+    - Client quirks table maintained by contributors
+  related_labs: [build-an-mcp-server]
+  related_teardowns: [retrieval-layer]
+
+- slug: cost-guardrails
+  title: "Cost Guardrails"
+  subtitle: "Terraform modules that cap AI workload spend"
+  category: cloud-operations
+  status: stable
+  language: HCL
+  license: Apache-2.0
+  description: "Budget alarms, token spend metering, idle sweeper, and a tested kill switch for sandbox and organisation accounts."
+  tech: [Terraform, AWS Budgets, CloudWatch, EventBridge, Lambda]
+  repo: "https://github.com/example/cost-guardrails"
+  docs: "/projects/cost-guardrails/"
+  maintainers: [linda-mhmd]
+  looking_for_maintainers: true
+  highlights:
+    - Sandbox module applies in one command with sensible default thresholds
+    - Token spend meter for model workloads, reported alongside infrastructure cost
+    - Kill switch with a documented and audited manual override
+    - Multi-account rollout path for organisations
+  related_labs: [terraform-guardrails-lab]
+  related_teardowns: [multi-agent-orchestration]

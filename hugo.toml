@@ -1,0 +1,52 @@
+baseURL = 'https://incredible.builders/'
+locale = 'en-us'
+theme = "incredible"
+title = 'incredible.builders'
+enableEmoji = false
+disableHugoGeneratorInject = true
+disableKinds = ['taxonomy', 'term']
+
+# Brand palette: green #3D8F37 · dark #0a1a08 · white #fff · bg #f8f9f6
+# Font: Inter
+
+[params]
+  description  = "Open source projects, labs, build logs, and architecture teardowns from people who ship."
+  tagline      = "Build in the open. Technical credibility through artifacts, not slides."
+  role         = "Practitioner and open source community for people who build"
+  email        = "builders@incredible-company.com"
+  linkedin     = "https://www.linkedin.com/in/lindamohamed"
+  github       = "https://github.com/linda-mhmd"
+  booking      = "https://outlook.office.com/book/hello@lindamohamed.com/?ismsaljsauthenabled"
+  parent       = "https://incredible-company.com/"
+
+  # Sibling domains in the Incredible portfolio
+  company        = "https://incredible-company.com/"
+  consulting_com = "https://incredible-consulting.com/"
+  consulting_org = "https://incredible-consulting.org/"
+  community      = "https://incredible.community/"
+  training       = "https://incredible.training/"
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+[[menus.main]]
+  name = "Build Logs"
+  url = "/build-logs/"
+  weight = 20
+[[menus.main]]
+  name = "Build Challenges"
+  url = "/challenges/"
+  weight = 30
+[[menus.main]]
+  name = "Contribute"
+  url = "/contribute/"
+  weight = 40
+[[menus.main]]
+  name = "Join In"
+  url = "/join/"
+  weight = 50
+[[menus.main]]
+  name = "Labs"
+  url = "/labs/"
+  weight = 60

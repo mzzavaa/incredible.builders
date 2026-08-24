@@ -1,0 +1,50 @@
+# Schema for the lab catalogue rendered at /labs/.
+# duration_min is wall clock for a competent engineer. est_cost_eur is a monthly ceiling.
+
+- slug: first-agent-in-an-hour
+  title: "Your First Agent in an Hour"
+  level: foundation
+  duration_min: 60
+  cloud: AWS
+  est_cost_eur: 2
+  description: "Build, trace, and cost-cap a working single-agent system in your own account, then destroy it cleanly."
+  prerequisites: ["AWS account with Bedrock access", "Python 3.11", "AWS CLI v2"]
+  outcomes:
+    - A traced agent responding to a real tool call
+    - One failing evaluation case turned green
+    - A verified teardown with the budget alarm closed
+  repo: "https://github.com/example/agent-scaffold"
+  related_project: agent-scaffold
+  verified_by: linda-mhmd
+
+- slug: build-an-mcp-server
+  title: "Build an MCP Server"
+  level: intermediate
+  duration_min: 120
+  cloud: Local
+  est_cost_eur: 0
+  description: "Write a Model Context Protocol server from scratch, pass the conformance harness, and ship it as a container."
+  prerequisites: ["Node 20", "Docker", "An MCP capable client"]
+  outcomes:
+    - Three tools with validated input schemas and useful error shapes
+    - A passing conformance run
+    - A container image installed into a real client
+  repo: "https://github.com/example/mcp-server-kit"
+  related_project: mcp-server-kit
+  verified_by: linda-mhmd
+
+- slug: terraform-guardrails-lab
+  title: "Guardrails Before Experiments"
+  level: foundation
+  duration_min: 45
+  cloud: AWS
+  est_cost_eur: 1
+  description: "Apply budget alarms, a spend meter, and a kill switch to a sandbox account before anyone starts building."
+  prerequisites: ["AWS sandbox account", "Terraform 1.6"]
+  outcomes:
+    - Guardrails applied and verified with a synthetic spend event
+    - Notifications landing in a channel the team reads
+    - A tested kill switch and a documented override
+  repo: "https://github.com/example/cost-guardrails"
+  related_project: cost-guardrails
+  verified_by: linda-mhmd

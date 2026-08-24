@@ -1,0 +1,44 @@
+# Schema for the wall of builds rendered at /showcase/.
+# Entries arrive by pull request. Evidence must be a public repo, a demo, or a recorded walkthrough.
+
+- slug: warehouse-anomaly-agent
+  title: "Warehouse Anomaly Agent"
+  builder: "Sample Builder"
+  builder_link: "https://github.com/example"
+  year: 2026
+  category: ai-systems
+  summary: "Agent that watches warehouse telemetry, explains anomalies in plain language, and files a maintenance ticket."
+  technologies: [Python, AWS Bedrock, Timestream, Lambda]
+  evidence: repo
+  repo: "https://github.com/example/warehouse-anomaly-agent"
+  demo: ""
+  built_during: winter-agent-sprint
+  featured: true
+
+- slug: postgis-mcp-bridge
+  title: "PostGIS MCP Bridge"
+  builder: "Sample Builder"
+  builder_link: "https://github.com/example"
+  year: 2026
+  category: developer-tooling
+  summary: "MCP server exposing spatial queries so an assistant can answer geography questions against a real PostGIS database."
+  technologies: [TypeScript, MCP, PostGIS, Docker]
+  evidence: demo
+  repo: "https://github.com/example/postgis-mcp-bridge"
+  demo: "https://example.com/postgis-mcp-demo"
+  built_during: ""
+  featured: false
+
+- slug: cfp-triage-bot
+  title: "CFP Triage Bot"
+  builder: "Sample Builder"
+  builder_link: "https://github.com/example"
+  year: 2025
+  category: community-tooling
+  summary: "Scores and de-duplicates conference talk submissions, then hands a ranked shortlist to human reviewers."
+  technologies: [Go, GitHub Actions, Notion API]
+  evidence: walkthrough
+  repo: "https://github.com/example/cfp-triage-bot"
+  demo: ""
+  built_during: autumn-community-jam
+  featured: false
